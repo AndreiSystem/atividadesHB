@@ -54,33 +54,3 @@ for i in lista[4][2]:
         break
     p.inserir_verduras(mercado.verduras, mercado.preco)
     v += 1
-
-
-def buscar_tipo(lista_produtos, produtos):
-    print("""
-    Bem Vindo ao seu Mercado Online!
-    Opções do Mercado:
-    0 - Sair
-    1 - Verduras
-    2 - Frutas
-    3 - Legumes
-    """)
-
-    while True:
-        escolha = int(
-            input('Selecione a categoria que você quer dar uma olhada: '))
-
-        if escolha == 1:
-            print(produtos.listar_por_tipo(escolha))
-        elif escolha == 2:
-            print(produtos.listar_por_tipo(escolha))
-        elif escolha == 3:
-            print(produtos.listar_por_tipo(escolha))
-        elif escolha == 0:
-            print('Pesquisa finalizada!')
-            break
-        else:
-            print('Essa Opção não está disponível no momento.')
-
-
-buscar_tipo(lista, p)
